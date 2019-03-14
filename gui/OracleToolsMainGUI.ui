@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>OracleTools</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>640</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>Connection</string>
+    </property>
+    <addaction name="actionConnectionDataBase"/>
+    <addaction name="actionLog_Off"/>
+    <addaction name="separator"/>
+    <addaction name="actionTnsnames_ora"/>
+    <addaction name="separator"/>
+    <addaction name="actionSetting"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuReport">
+    <property name="title">
+     <string>Report</string>
+    </property>
+    <addaction name="actionAWR_Report"/>
+    <addaction name="actionASH_Report"/>
+   </widget>
+   <widget class="QMenu" name="menuSetting">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionView_Tablespace"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionUser_s_Guide"/>
+    <addaction name="actionIssue_Feedback"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuReport"/>
+   <addaction name="menuSetting"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionConnectionDataBase">
+   <property name="text">
+    <string>Sign on</string>
+   </property>
+  </action>
+  <action name="actionLog_Off">
+   <property name="text">
+    <string>Sign out</string>
+   </property>
+  </action>
+  <action name="actionTnsnames_ora">
+   <property name="text">
+    <string>Open tnsnames.ora</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionAWR_Report">
+   <property name="text">
+    <string>AWR Report</string>
+   </property>
+  </action>
+  <action name="actionASH_Report">
+   <property name="text">
+    <string>ASH Report</string>
+   </property>
+  </action>
+  <action name="actionSetting">
+   <property name="text">
+    <string>Setting</string>
+   </property>
+  </action>
+  <action name="actionUser_s_Guide">
+   <property name="text">
+    <string>User's Guide</string>
+   </property>
+  </action>
+  <action name="actionIssue_Feedback">
+   <property name="text">
+    <string>Help Center</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionView_Tablespace">
+   <property name="text">
+    <string>View Tablespace</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
